@@ -9,7 +9,7 @@ public class SumCalcJunit extends BaseTest {
 
     @Test
     public void testSummationOperationWithJUnit() {
-        long result = calculator.sum(4, -4);
-        Assert.assertTrue(result == 0);
+        long result = calculator.sum(1111111111L, 8888888888L);
+        Assert.assertTrue(result == 9999999999L);
     }
 }

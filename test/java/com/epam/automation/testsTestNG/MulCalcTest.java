@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class MulCalcTest extends BaseTest {
 
 
-    @Test(groups = "TestDivision", dataProvider = "DoubleValuesForMultiplication")
+    @Test(groups = "testDivision", dataProvider = "DoubleValuesForMultiplication")
     public void testMulOperationWithDoubleValuesTestNG(double a, double b, double expected) {
         double result = calculator.mult(a, b);
         Assert.assertEquals(result, expected, "Incorrect result of multiplication operation with double params");
@@ -26,7 +26,7 @@ public class MulCalcTest extends BaseTest {
         };
     }
 
-    @Test(groups = "TestDivision", dataProvider = "longValuesForMultiplication")
+    @Test(groups = "testDivision", dataProvider = "longValuesForMultiplication")
     public void testMulOperationWithLongValuesTestNG(long a, long b, long expected) {
         long result = calculator.mult(a, b);
         Assert.assertEquals(result, expected, "Incorrect result of multiplication operation with long params");

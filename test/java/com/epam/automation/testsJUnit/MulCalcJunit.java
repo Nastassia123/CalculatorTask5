@@ -9,7 +9,7 @@ public class MulCalcJunit extends BaseTest {
 
     @Test
     public void testMultiplicationOperationWithJUnit() {
-        long result = calculator.mult(1, 100);
-        Assert.assertTrue(result == 100);
+        long result = calculator.mult(999L, 1000000L);
+        Assert.assertTrue(result == 999000000L);
     }
 }

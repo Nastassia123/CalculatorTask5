@@ -16,7 +16,7 @@ public class CatangensCalcTest extends BaseTest {
 
 
     @DataProvider(name = "valuesForCtg")
-    public Object[][] valuesForTg() {
+    public Object[][] valuesForCtg() {
         return new Object[][]{
                 {30, Math.sqrt(3)},
                 {45, 1},

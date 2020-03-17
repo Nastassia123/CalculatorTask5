@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class DivCalcTest extends BaseTest {
 
-    @Test(groups = "TestDivision", dataProvider = "doubleValuesForDivision")
+    @Test(groups = "testDivision", dataProvider = "doubleValuesForDivision")
     public void testDivOperationWithDoubleValuesTestNG(double a, double b, double expected){
        double result =  calculator.div(a, b);
        Assert.assertEquals(result,expected, "Incorrect result of division operation with double params");
@@ -25,7 +25,7 @@ public class DivCalcTest extends BaseTest {
         };
     }
 
-    @Test(groups = "TestDivision", dataProvider = "longValuesForDivision")
+    @Test(groups = "testDivision", dataProvider = "longValuesForDivision")
     public void testDivOperationWithLongValuesTestNG(long a, long b, long expected){
         long result =  calculator.div(a,b);
         Assert.assertEquals(result, expected, "Incorrect result of division operation with long params");
